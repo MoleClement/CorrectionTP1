@@ -75,12 +75,13 @@ public class ExTwo {
                     //On augmente le compte
                     countMV++;
                 } else {
-                    //Sinon on récupère la valeure et on réinitialise le compte
+                    //Sinon on récupère la valeur et on réinitialise le compteur
                     maxValue = grades[i];
                     countMV = 1;
                 }
-                //Si la note est plus petite
-            } else if (grades[i] <= lowerValue) {
+
+            }  //Si la note est plus petite
+            if (grades[i] <= lowerValue) {
                 if (grades[i] == lowerValue) {
                     //On augmente le compte
                     countLV++;
